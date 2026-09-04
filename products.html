@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Shop | Paws & Whiskers</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/products.css">
+
+</head>
+
+
+<body>
+
+    <header class="navbar">
+
+    <div class="nav-container">
+
+        <a href="index.html" class="logo">
+
+            <span class="logo-icon">
+                <i class="fa-solid fa-paw"></i>
+            </span>
+
+            <span class="logo-text">
+                Paws & Whiskers
+            </span>
+
+        </a>
+
+        <nav class="nav-links" id="navLinks">
+
+            <a href="index.html" class="nav-link">
+                Home
+            </a>
+
+            <a href="products.html" class="nav-link active">
+                Products
+            </a>
+
+            <a href="about.html" class="nav-link">
+                About
+            </a>
+
+        </nav>
+
+        <div class="nav-actions">
+
+            <a href="cart.html" class="cart-link">
+
+                <i class="fa-solid fa-cart-shopping"></i>
+
+                <span>
+                    Cart
+                </span>
+
+                <span
+                    class="cart-count"
+                    id="cartCount"
+                >
+                    0
+                </span>
+
+            </a>
+
+            <a href="login.html" class="login-link">
+
+                <i class="fa-regular fa-user"></i>
+
+                <span id="loginText">
+                    Login
+                </span>
+
+            </a>
+
+            <button
+                class="menu-button"
+                id="menuButton"
+                type="button"
+                aria-label="Open menu"
+            >
+
+                <i class="fa-solid fa-bars"></i>
+
+            </button>
+
+        </div>
+
+    </div>
+
+</header>
+
+
+    <section class="page-header">
+
+        <div class="page-header-content">
+
+            <span class="small-title">
+                🐾 Our Collection
+            </span>
+
+            <h1>
+                Shop for Your Best Friend
+            </h1>
+
+            <p>
+                Find delicious food, fun toys, tasty treats, and everything
+                your furry friend needs.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <main class="products-section">
+
+        <div class="products-container">
+
+            <div class="section-heading">
+
+                <div>
+                    <span class="section-label">
+                        Our Products
+                    </span>
+
+                    <h2>
+                        Everything They Love
+                    </h2>
+                </div>
+
+                <p id="productsResult">
+                    Showing all products
+                </p>
+
+            </div>
+
+            <div class="filters-box">
+
+                <div class="filter-group">
+
+                    <label for="productName">
+                        Product Name
+                    </label>
+
+                    <div class="input-wrapper">
+
+                        <i class="fa-solid fa-magnifying-glass"></i>
+
+                        <input
+                            type="text"
+                            id="productName"
+                            placeholder="Search product..."
+                        >
+
+                    </div>
+
+                </div>
+
+                <div class="filter-group">
+
+                    <label for="petFilter">
+                        Pet
+                    </label>
+
+                    <select id="petFilter">
+
+                        <option value="">
+                            All Pets
+                        </option>
+
+                        <option value="Cats">
+                            Cats
+                        </option>
+
+                        <option value="Dogs">
+                            Dogs
+                        </option>
+
+                    </select>
+
+                </div>
+
+                <div class="filter-group">
+
+                    <label for="categoryFilter">
+                        Category
+                    </label>
+
+                    <select id="categoryFilter">
+
+                        <option value="">
+                            All Categories
+                        </option>
+
+                        <option value="Dry Food">
+                            Dry Food
+                        </option>
+
+                        <option value="Wet Food">
+                            Wet Food
+                        </option>
+
+                        <option value="Litter">
+                            Litter
+                        </option>
+
+                        <option value="Toys">
+                            Toys
+                        </option>
+
+                        <option value="Treats">
+                            Treats
+                        </option>
+
+                    </select>
+
+                </div>
+
+                <div class="filter-group">
+
+                    <label for="sortProducts">
+                        Sort By
+                    </label>
+
+                    <select id="sortProducts">
+
+                        <option value="default">
+                            Default
+                        </option>
+
+                        <option value="name-asc">
+                            Name: A → Z
+                        </option>
+
+                        <option value="name-desc">
+                            Name: Z → A
+                        </option>
+
+                        <option value="price-low">
+                            Price: Low → High
+                        </option>
+
+                        <option value="price-high">
+                            Price: High → Low
+                        </option>
+
+                    </select>
+
+                </div>
+
+                <button type="button" id="clearFilters" class="clear-btn">
+                    <i class="fa-solid fa-rotate-left"></i>
+                    Clear
+                </button>
+
+            </div>
+
+            <div id="productsGrid" class="products-grid">
+
+            </div>
+
+            <div id="noResults" class="no-results hidden">
+
+                <div class="no-results-icon">
+                    <i class="fa-solid fa-paw"></i>
+                </div>
+
+                <h3>
+                    No Products Found
+                </h3>
+
+                <p>
+                    We couldn't find any products matching your filters.
+                    Try changing your search criteria.
+                </p>
+
+                <button
+                    type="button"
+                    id="clearFiltersEmpty"
+                    class="clear-empty-btn"
+                >
+                    Clear Filters
+                </button>
+
+            </div>
+
+        </div>
+
+    </main>
+
+
+    <footer class="footer">
+
+        <div class="footer-container">
+
+            <div class="footer-column footer-about">
+
+                <a href="index.html" class="footer-logo">
+
+                    <span>
+                        <i class="fa-solid fa-paw"></i>
+                    </span>
+
+                    Paws & Whiskers
+
+                </a>
+
+                <p>
+                    Making tails wag and purrs loud,
+                    one product at a time. ♡
+                </p>
+
+
+                <div class="social-links">
+
+                    <a href="#" aria-label="Instagram">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+
+                    <a href="#" aria-label="Facebook">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+
+                    <a href="#" aria-label="Twitter">
+                        <i class="fa-brands fa-x-twitter"></i>
+                    </a>
+
+                </div>
+
+            </div>
+
+            <div class="footer-column">
+
+                <h3>
+                    Quick Links
+                </h3>
+
+                <a href="index.html">
+                    Home
+                </a>
+
+                <a href="products.html">
+                    Products
+                </a>
+
+                <a href="about.html">
+                    About Us
+                </a>
+
+            </div>
+
+            <div class="footer-column">
+
+                <h3>
+                    Customer Care
+                </h3>
+
+                <a href="cart.html">
+                    Shopping Cart
+                </a>
+
+                <a href="login.html">
+                    My Account
+                </a>
+
+                <a href="#">
+                    Shipping Information
+                </a>
+
+                <a href="#">
+                    Returns & Refunds
+                </a>
+
+            </div>
+
+            <div class="footer-column">
+
+                <h3>
+                    Get In Touch
+                </h3>
+
+                <p class="footer-contact">
+                    <i class="fa-solid fa-envelope"></i>
+                    hello@pawsandwhiskers.com
+                </p>
+
+                <p class="footer-contact">
+                    <i class="fa-solid fa-phone"></i>
+                    +963 988 861 698
+                </p>
+
+                <p class="footer-contact">
+                    <i class="fa-solid fa-location-dot"></i>
+                    Your Pet's Happy Place
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <p>
+                © 2026 Paws & Whiskers.
+                All rights reserved.
+            </p>
+
+        </div>
+
+    </footer>
+
+    <script src="JS/main.js"></script>
+    <script src="JS/products.js"></script>
+
+</body>
+
+</html>

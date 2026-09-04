@@ -1,0 +1,1017 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Checkout | Paws & Whiskers</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/checkout.css">
+
+</head>
+
+
+<body>
+
+<header class="navbar">
+
+    <div class="nav-container">
+
+        <a href="index.html" class="logo">
+
+            <span class="logo-icon">
+                <i class="fa-solid fa-paw"></i>
+            </span>
+
+            <span class="logo-text">
+                Paws & Whiskers
+            </span>
+
+        </a>
+
+        <nav class="nav-links" id="navLinks">
+
+            <a
+                href="index.html"
+                class="nav-link"
+            >
+                Home
+            </a>
+
+            <a
+                href="products.html"
+                class="nav-link"
+            >
+                Products
+            </a>
+
+            <a
+                href="about.html"
+                class="nav-link"
+            >
+                About
+            </a>
+
+        </nav>
+
+        <div class="nav-actions">
+
+            <a
+                href="cart.html"
+                class="cart-link"
+            >
+
+                <i class="fa-solid fa-cart-shopping"></i>
+
+                <span>
+                    Cart
+                </span>
+
+                <span
+                    class="cart-count"
+                    id="cartCount"
+                >
+                    0
+                </span>
+
+            </a>
+
+            <a
+                href="login.html"
+                class="login-link"
+            >
+
+                <i class="fa-regular fa-user"></i>
+
+                <span id="loginText">
+                    Login
+                </span>
+
+            </a>
+
+            <button
+                class="menu-button"
+                id="menuButton"
+                type="button"
+                aria-label="Open menu"
+            >
+
+                <i class="fa-solid fa-bars"></i>
+
+            </button>
+
+        </div>
+
+    </div>
+
+</header>
+
+
+<section class="checkout-header">
+
+    <div class="checkout-header-content">
+
+        <span class="checkout-label">
+            COMPLETE YOUR ORDER
+        </span>
+
+        <h1>
+            Checkout
+        </h1>
+
+        <p>
+            Enter your details and choose how
+            you'd like to receive your order.
+        </p>
+
+    </div>
+
+</section>
+
+
+<main class="checkout-section">
+
+    <div
+        class="checkout-content"
+        id="checkoutContent"
+    >
+
+        <form
+            class="checkout-form"
+            id="checkoutForm"
+        >
+
+            <div class="checkout-card">
+
+                <div class="card-heading">
+
+                    <div class="card-number">
+                        01
+                    </div>
+
+                    <div>
+                        <span>
+                            YOUR DETAILS
+                        </span>
+
+                        <h2>
+                            Contact Information
+                        </h2>
+                    </div>
+
+                </div>
+
+
+                <div class="form-grid">
+
+                    <div class="form-group full-width">
+
+                        <label for="fullName">
+                            Full Name
+                        </label>
+
+                        <input
+                            type="text"
+                            id="fullName"
+                            name="fullName"
+                            placeholder="Enter your full name"
+                            autocomplete="name"
+                        >
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="phone">
+                            Phone Number
+                        </label>
+
+                        <input
+                            type="tel"
+                            id="phone"
+                            name="phone"
+                            placeholder="09xxxxxxxx"
+                            autocomplete="tel"
+                        >
+
+                        <small>
+                            Example: 0988888888
+                        </small>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="email">
+                            Email
+                            <span>
+                                Optional
+                            </span>
+                        </label>
+
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            placeholder="you@example.com"
+                            autocomplete="email"
+                        >
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="checkout-card">
+
+                <div class="card-heading">
+
+                    <div class="card-number">
+                        02
+                    </div>
+
+                    <div>
+                        <span>
+                            DELIVERY
+                        </span>
+
+                        <h2>
+                            Delivery Address
+                        </h2>
+                    </div>
+
+                </div>
+
+
+                <div class="form-grid">
+
+                    <div class="form-group">
+
+                        <label for="governorate">
+                            Governorate
+                        </label>
+
+                        <select
+                            id="governorate"
+                            name="governorate"
+                        >
+
+                            <option value="">
+                                Select governorate
+                            </option>
+
+                            <option value="Damascus">
+                                Damascus
+                            </option>
+
+                            <option value="Rif Dimashq">
+                                Rif Dimashq
+                            </option>
+
+                            <option value="Aleppo">
+                                Aleppo
+                            </option>
+
+                            <option value="Homs">
+                                Homs
+                            </option>
+
+                            <option value="Hama">
+                                Hama
+                            </option>
+
+                            <option value="Latakia">
+                                Latakia
+                            </option>
+
+                            <option value="Tartus">
+                                Tartus
+                            </option>
+
+                            <option value="Idlib">
+                                Idlib
+                            </option>
+
+                            <option value="Deir ez-Zor">
+                                Deir ez-Zor
+                            </option>
+
+                            <option value="Raqqa">
+                                Raqqa
+                            </option>
+
+                            <option value="Hasakah">
+                                Hasakah
+                            </option>
+
+                            <option value="Daraa">
+                                Daraa
+                            </option>
+
+                            <option value="As-Suwayda">
+                                As-Suwayda
+                            </option>
+
+                            <option value="Quneitra">
+                                Quneitra
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="city">
+                            City / Area
+                        </label>
+
+                        <input
+                            type="text"
+                            id="city"
+                            name="city"
+                            placeholder="City or area"
+                        >
+
+                    </div>
+
+
+                    <div class="form-group full-width">
+
+                        <label for="street">
+                            Street / Neighborhood
+                        </label>
+
+                        <input
+                            type="text"
+                            id="street"
+                            name="street"
+                            placeholder="Street, neighborhood, or nearby landmark"
+                        >
+
+                    </div>
+
+
+                    <div class="form-group full-width">
+
+                        <label for="addressDetails">
+                            Building & Address Details
+                        </label>
+
+                        <textarea
+                            id="addressDetails"
+                            name="addressDetails"
+                            rows="3"
+                            placeholder="Building number, floor, apartment, entrance, or other details"
+                        ></textarea>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="checkout-card">
+
+                <div class="card-heading">
+
+                    <div class="card-number">
+                        03
+                    </div>
+
+                    <div>
+                        <span>
+                            DELIVERY TIME
+                        </span>
+
+                        <h2>
+                            Choose Delivery Time
+                        </h2>
+                    </div>
+
+                </div>
+
+
+                <div class="delivery-options">
+
+                    <label class="choice-card">
+
+                        <input
+                            type="radio"
+                            name="delivery"
+                            value="asap"
+                            checked
+                        >
+
+                        <span class="choice-icon">
+                            <i class="fa-solid fa-bolt"></i>
+                        </span>
+
+                        <span class="choice-content">
+
+                            <strong>
+                                As Soon As Possible
+                            </strong>
+
+                            <small>
+                                We'll deliver your order
+                                at the earliest available time.
+                            </small>
+
+                        </span>
+
+                        <span class="choice-check">
+                            <i class="fa-solid fa-check"></i>
+                        </span>
+
+                    </label>
+
+
+                    <label class="choice-card">
+
+                        <input
+                            type="radio"
+                            name="delivery"
+                            value="scheduled"
+                        >
+
+                        <span class="choice-icon">
+                            <i class="fa-regular fa-calendar"></i>
+                        </span>
+
+                        <span class="choice-content">
+
+                            <strong>
+                                Schedule Delivery
+                            </strong>
+
+                            <small>
+                                Choose your preferred
+                                date and time.
+                            </small>
+
+                        </span>
+
+                        <span class="choice-check">
+                            <i class="fa-solid fa-check"></i>
+                        </span>
+
+                    </label>
+
+                </div>
+
+
+                <div class="scheduled-fields hidden" id="scheduledFields">
+
+                    <div class="form-group">
+
+                        <label for="deliveryDate">
+                            Delivery Date
+                        </label>
+
+                        <input
+                            type="date"
+                            id="deliveryDate"
+                            name="deliveryDate"
+                        >
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="deliveryTime">
+                            Time Slot
+                        </label>
+
+                        <select
+                            id="deliveryTime"
+                            name="deliveryTime"
+                        >
+
+                            <option value="">
+                                Select a time slot
+                            </option>
+
+                            <option value="10:00 AM - 12:00 PM">
+                                10:00 AM - 12:00 PM
+                            </option>
+
+                            <option value="12:00 PM - 2:00 PM">
+                                12:00 PM - 2:00 PM
+                            </option>
+
+                            <option value="2:00 PM - 4:00 PM">
+                                2:00 PM - 4:00 PM
+                            </option>
+
+                            <option value="4:00 PM - 6:00 PM">
+                                4:00 PM - 6:00 PM
+                            </option>
+
+                            <option value="6:00 PM - 8:00 PM">
+                                6:00 PM - 8:00 PM
+                            </option>
+
+                        </select>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="checkout-card">
+
+                <div class="card-heading">
+
+                    <div class="card-number">
+                        04
+                    </div>
+
+                    <div>
+                        <span>
+                            PAYMENT
+                        </span>
+
+                        <h2>
+                            Payment Method
+                        </h2>
+                    </div>
+
+                </div>
+
+
+                <div class="payment-options">
+
+                    <label class="payment-card">
+
+                        <input
+                            type="radio"
+                            name="payment"
+                            value="cash"
+                            checked
+                        >
+
+                        <span class="payment-icon">
+                            <i class="fa-solid fa-money-bill-wave"></i>
+                        </span>
+
+                        <span class="payment-content">
+
+                            <strong>
+                                Cash on Delivery
+                            </strong>
+
+                            <small>
+                                Pay in cash when your order arrives.
+                            </small>
+
+                        </span>
+
+                        <span class="payment-check">
+                            <i class="fa-solid fa-check"></i>
+                        </span>
+
+                    </label>
+
+
+                    <label class="payment-card">
+
+                        <input
+                            type="radio"
+                            name="payment"
+                            value="shamcash"
+                        >
+
+                        <span class="payment-icon">
+                            <i class="fa-solid fa-mobile-screen-button"></i>
+                        </span>
+
+                        <span class="payment-content">
+
+                            <strong>
+                                Sham Cash
+                            </strong>
+
+                            <small>
+                                Pay through your Sham Cash account.
+                            </small>
+
+                        </span>
+
+                        <span class="payment-check">
+                            <i class="fa-solid fa-check"></i>
+                        </span>
+
+                    </label>
+
+                </div>
+
+
+                <div class="sham-cash-fields hidden" id="shamCashFields">
+
+                    <div class="form-group">
+
+                        <label for="shamCashNumber">
+                            Sham Cash Phone / Account Number
+                        </label>
+
+                        <input type="text" id="shamCashNumber" name="shamCashNumber" placeholder="09xxxxxxxx">
+
+                    </div>
+
+                    <div class="payment-note">
+
+                        <i class="fa-solid fa-circle-info"></i>
+
+                        <span>
+                            You will receive the payment
+                            instructions after submitting
+                            your order.
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="checkout-card">
+
+                <div class="card-heading">
+
+                    <div class="card-number">
+                        05
+                    </div>
+
+                    <div>
+                        <span>
+                            EXTRA DETAILS
+                        </span>
+
+                        <h2>
+                            Order Notes
+                        </h2>
+                    </div>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="orderNotes">
+                        Notes
+                        <span>
+                            Optional
+                        </span>
+                    </label>
+
+                    <textarea id="orderNotes" name="orderNotes" rows="4" placeholder="Any delivery instructions or special notes?"></textarea>
+
+                </div>
+
+            </div>
+
+
+            <button type="submit" class="place-order-button">
+
+                <i class="fa-solid fa-lock"></i>
+
+                Place Order
+
+            </button>
+
+            <p class="secure-note">
+
+                <i class="fa-solid fa-shield-heart"></i>
+
+                Your order information is handled
+                securely on this website.
+
+            </p>
+
+        </form>
+
+
+        <aside class="checkout-summary">
+
+            <div class="summary-card">
+
+                <div class="summary-card-heading">
+
+                    <span class="checkout-label">
+                        YOUR ORDER
+                    </span>
+
+                    <h2>
+                        Order Summary
+                    </h2>
+
+                </div>
+
+
+                <div
+                    class="checkout-items"
+                    id="checkoutItems"
+                >
+                </div>
+
+
+                <div class="summary-line">
+
+                    <span>
+                        Items
+                    </span>
+
+                    <span id="checkoutItemsCount">
+                        0 items
+                    </span>
+
+                </div>
+
+
+                <div class="summary-line">
+
+                    <span>
+                        Subtotal
+                    </span>
+
+                    <span id="checkoutSubtotal">
+                        $0.00
+                    </span>
+
+                </div>
+
+
+                <div class="summary-line">
+
+                    <span>
+                        Delivery
+                    </span>
+
+                    <span class="free-delivery">
+                        FREE
+                    </span>
+
+                </div>
+
+
+                <div class="summary-divider">
+                </div>
+
+
+                <div class="summary-total">
+
+                    <span>
+                        Total
+                    </span>
+
+                    <strong id="checkoutTotal">
+                        $0.00
+                    </strong>
+
+                </div>
+
+
+                <div class="summary-note">
+
+                    <i class="fa-solid fa-paw"></i>
+
+                    <span>
+                        Thank you for choosing
+                        Paws & Whiskers.
+                    </span>
+
+                </div>
+
+            </div>
+
+        </aside>
+
+    </div>
+
+
+    <div class="empty-checkout hidden" id="emptyCheckout">
+
+        <div class="empty-checkout-icon">
+
+            <i class="fa-solid fa-cart-shopping"></i>
+
+        </div>
+
+        <h2>
+            Your Cart Is Empty
+        </h2>
+
+        <p>
+            Add some products to your cart
+            before checking out.
+        </p>
+
+        <a href="products.html" class="empty-checkout-button">
+
+            <i class="fa-solid fa-paw"></i>
+            Start Shopping
+        </a>
+
+    </div>
+
+
+    <div
+        class="success-message hidden"
+        id="successMessage"
+    >
+
+        <div class="success-icon">
+
+            <i class="fa-solid fa-check"></i>
+
+        </div>
+
+        <span class="checkout-label">
+            ORDER CONFIRMED
+        </span>
+
+        <h2>
+            Thank You for Your Order!
+        </h2>
+
+        <p>
+            Your order has been received successfully.
+            We'll get your pet's goodies ready for delivery.
+        </p>
+
+        <div class="order-number-box">
+
+            <span>
+                Order Number
+            </span>
+
+            <strong id="successOrderNumber">
+                PW-000000
+            </strong>
+
+        </div>
+
+        <a href="products.html" class="success-button">
+            Continue Shopping
+            <i class="fa-solid fa-arrow-right"></i>
+        </a>
+
+    </div>
+
+</main>
+
+
+<footer class="footer">
+
+    <div class="footer-container">
+
+        <div class="footer-column footer-about">
+
+            <a
+                href="index.html"
+                class="footer-logo"
+            >
+
+                <span>
+                    <i class="fa-solid fa-paw"></i>
+                </span>
+
+                Paws & Whiskers
+
+            </a>
+
+            <p>
+                Premium essentials for happy cats
+                and dogs. Because they deserve
+                the very best. ♡
+            </p>
+
+            <div class="social-links">
+
+                <a href="#" aria-label="Instagram">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+
+                <a href="#" aria-label="Facebook">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </a>
+
+                <a href="#" aria-label="Twitter">
+                    <i class="fa-brands fa-x-twitter"></i>
+                </a>
+
+            </div>
+
+        </div>
+
+        <div class="footer-column">
+
+            <h3>
+                Quick Links
+            </h3>
+
+            <a href="index.html">
+                Home
+            </a>
+
+            <a href="products.html">
+                Products
+            </a>
+
+            <a href="about.html">
+                About Us
+            </a>
+
+        </div>
+
+        <div class="footer-column">
+
+            <h3>
+                Customer Care
+            </h3>
+
+            <a href="cart.html">
+                Shopping Cart
+            </a>
+
+            <a href="login.html">
+                My Account
+            </a>
+
+            <a href="#">
+                Shipping Information
+            </a>
+
+            <a href="#">
+                Returns & Refunds
+            </a>
+
+        </div>
+
+        <div class="footer-column">
+
+            <h3>
+                Get In Touch
+            </h3>
+
+            <p class="footer-contact">
+                <i class="fa-solid fa-envelope"></i>
+                hello@pawsandwhiskers.com
+            </p>
+
+            <p class="footer-contact">
+                <i class="fa-solid fa-phone"></i>
+                +963 988 861 698
+            </p>
+
+            <p class="footer-contact">
+                <i class="fa-solid fa-location-dot"></i>
+                Your Pet's Happy Place
+            </p>
+
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+
+        <p>
+            © 2026 Paws & Whiskers.
+            All rights reserved.
+        </p>
+
+    </div>
+
+</footer>
+
+
+<script src="JS/main.js"></script>
+<script src="JS/checkout.js"></script>
+
+</body>
+
+</html>

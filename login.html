@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="CSS/login.css">
+
+    <title>Login | Paws & Whiskers</title>
+    
+</head>
+
+
+<body>
+
+    <div class="container" id="container">
+
+        <div class="form-container sign-up">
+
+            <form id="signUpForm">
+
+                <div class="form-logo">
+                    <i class="fa-solid fa-paw"></i>
+                </div>
+
+                <h1>Create an Account</h1>
+
+                <p class="form-subtitle">
+                    Join the Paws & Whiskers family
+                </p>
+
+                <div class="social-icons">
+
+                    <a href="#" class="icon">
+                        <i class="fa-brands fa-google"></i>
+                    </a>
+
+                    <a href="#" class="icon">
+                        <i class="fa-solid fa-phone"></i>
+                    </a>
+
+                </div>
+
+                <span class="divider-text">
+                    Or register with your email
+                </span>
+
+                <input id="input-fullname" type="text" placeholder="Full Name">
+
+                <input id="input-email" type="email" placeholder="Email Address">
+
+                <input id="input-password" type="password" placeholder="Password">
+
+                <p id="signUpMessage" class="form-message"></p>
+
+                <button type="submit">
+                    Create Account
+                </button>
+                <a href="index.html" class="back-home">
+                    ← Back to Paws & Whiskers
+                </a>
+
+            </form>
+
+        </div>
+
+
+        <div class="form-container sign-in">
+
+            <form id="signInForm">
+
+                <div class="form-logo">
+                    <i class="fa-solid fa-paw"></i>
+                </div>
+
+                <h1>Welcome Back!</h1>
+
+                <p class="form-subtitle">
+                    Your furry friends missed you ♡
+                </p>
+
+                <div class="social-icons">
+
+                    <a href="#" class="icon">
+                        <i class="fa-brands fa-google"></i>
+                    </a>
+
+                    <a href="#" class="icon">
+                        <i class="fa-solid fa-phone"></i>
+                    </a>
+
+                </div>
+
+                <span class="divider-text">
+                    Or use your email and password
+                </span>
+
+                <input id="login-email" type="email" placeholder="Email Address">
+
+                <input id="login-password" type="password" placeholder="Password">
+
+                <a href="#" id="forgotPassword">
+                    Forgot your password?
+                </a>
+
+                <p id="loginMessage" class="form-message"></p>
+
+                <button type="submit">
+                    Sign In
+                </button>
+
+                <a href="index.html" class="back-home">
+                    ← Back to Paws & Whiskers
+                </a>
+
+            </form>
+
+        </div>
+
+
+        <div class="toggle-container">
+
+            <div class="toggle">
+
+                <div class="toggle-panel toggle-left">
+
+                    <div class="panel-logo">
+                        <i class="fa-solid fa-paw"></i>
+                    </div>
+
+                    <h1>Welcome Back!</h1>
+
+                    <p>
+                        Sign in to continue shopping for
+                        everything your furry friend needs.
+                    </p>
+
+                    <button type="button" id="login">
+                        Sign In
+                    </button>
+
+                </div>
+
+
+                <div class="toggle-panel toggle-right">
+
+                    <div class="panel-logo">
+                        <i class="fa-solid fa-paw"></i>
+                    </div>
+
+                    <h1>Hello, Friend!</h1>
+
+                    <p>
+                        Create your account and discover
+                        lovely products for your best friend.
+                    </p>
+
+                    <button type="button" id="register">
+                        Sign Up
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="JS/main.js"></script>
+    <script src="JS/login.js"></script>
+
+</body>
+
+</html>
