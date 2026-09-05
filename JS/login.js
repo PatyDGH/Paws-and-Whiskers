@@ -163,3 +163,22 @@ function clearMessages() {
     loginMessage.className = "form-message";
 
 }
+
+const mobileSignUp = document.getElementById("switchToSignUp");
+const mobileSignIn = document.getElementById("switchToSignIn");
+
+if (mobileSignUp) {
+    mobileSignUp.addEventListener("click", function (e) {
+        e.preventDefault();
+        container.classList.add("active");
+        clearMessages();
+    });
+}
+
+if (mobileSignIn) {
+    mobileSignIn.addEventListener("click", function (e) {
+        e.preventDefault();
+        container.classList.remove("active");
+        clearMessages();
+    });
+}
