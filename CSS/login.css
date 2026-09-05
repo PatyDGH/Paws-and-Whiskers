@@ -320,25 +320,27 @@ body {
     color: #b76e79;
 }
 
-.mobile-toggle-link {
+.mobile-toggle-wrapper {
     display: none;
     margin-top: 8px;
-    color: #8b7a70;
     font-size: 11px;
-    text-decoration: none;
+    color: #8b7a70;
+    text-align: center;
 }
 
-.mobile-toggle-link strong {
+.mobile-toggle-link {
     color: #b76e79;
     font-weight: 600;
+    text-decoration: none;
+    margin-left: 4px;
 }
 
-.mobile-toggle-link:hover strong {
+.mobile-toggle-link:hover {
     text-decoration: underline;
 }
 
 @media (max-width: 750px) {
-    .mobile-toggle-link {
+    .mobile-toggle-wrapper {
         display: block;
     }
 }
