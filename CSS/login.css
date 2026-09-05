@@ -320,6 +320,29 @@ body {
     color: #b76e79;
 }
 
+.mobile-toggle-link {
+    display: none;
+    margin-top: 8px;
+    color: #8b7a70;
+    font-size: 11px;
+    text-decoration: none;
+}
+
+.mobile-toggle-link strong {
+    color: #b76e79;
+    font-weight: 600;
+}
+
+.mobile-toggle-link:hover strong {
+    text-decoration: underline;
+}
+
+@media (max-width: 750px) {
+    .mobile-toggle-link {
+        display: block;
+    }
+}
+
 @media (max-width: 750px) {
 
     .container {
